@@ -1,0 +1,188 @@
+.popup {
+    width: 620px;
+    margin: -150px auto 0 auto;
+}
+
+.form-fields {
+    padding: 0 80px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form-block {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.form-block:nth-child(2) {
+    margin-right: 0;
+}
+
+.form-fields label {
+    display: block;
+    clear: both;
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.form-fields input[type="text"],
+.form-fields input[type="email"],
+.form-fields textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #999;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-fields textarea {
+    height: 110px;
+}
+
+.form-buttons {
+    width: 460px;
+    padding: 0 80px;
+    font-size: 0;
+}
+
+.form-button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 220px;
+    margin-top: 25px;
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 36px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #ee3643;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.form-cancel {
+    margin-right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    background: #fff;
+}
+
+.form-button:hover {
+    background-color: #ca2c37;
+}
+
+.form-button:active {
+    background-color: #ba2732;
+}
+
+.form-cancel:hover {
+    color: #000;
+    border: 1px solid #ee3643;
+    background-color: #fff;
+}
+
+.form-cancel:active {
+    line-height: 36px;
+    color: #000;
+    border: 1px solid lightgrey;
+    background-color: #fff;
+}
+
+
+/* для экрана меньше 320px */
+
+@media all and (max-width: 320px) {
+    .popup {
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        background: #37383c;
+    }
+    .form-buttons {
+        padding: 0 40px;
+        font-size: 0;
+    }
+    .form-button {
+        display: block;
+        font-size: 10px;
+        border: 1px solid #ca2c37;
+    }
+    .form-fields {
+        padding: 0 40px;
+    }
+    .form-fields label {
+        display: block;
+        clear: both;
+        padding-bottom: 10px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .form-fields input[type="text"],
+    .form-fields input[type="email"],
+    .form-fields textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        line-height: 10px;
+        color: #999;
+        border-radius: 4px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+
+/* для экрана больше 320px и меньше 480px */
+
+@media all and (max-width: 480px) and (min-width: 321px) {
+    .popup {
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        background: #37383c;
+    }
+    .form-buttons {
+        padding: 0 110px;
+        font-size: 0;
+    }
+    .form-button {
+        display: block;
+        font-size: 10px;
+        border: 1px solid #ca2c37;
+    }
+    .form-fields {
+        padding: 0 110px;
+    }
+    .form-fields label {
+        display: block;
+        clear: both;
+        padding-bottom: 10px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .form-fields textarea {
+        width: 90%;
+        padding: 10px;
+        line-height: 10px;
+        color: #999;
+        border-radius: 4px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .popup {
+        margin: -100px auto;
+    }
+}

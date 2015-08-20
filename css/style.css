@@ -1,0 +1,177 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 5px 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.content {
+    padding: 20px 0 40px 0;
+}
+
+.parallax {
+    height: 900px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main-title {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 400px;
+    margin-top: 0;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.parallax-1 {
+    background-image: url("/img/new-cover.jpg");
+}
+
+.parallax-2 {
+    background-image: url("/img/keyboard.jpg");
+}
+
+.parallax-3 {
+    background-image: url("/img/desctop.jpg");
+}
+
+.parallax-4 {
+    background-image: url("/img/new-cover-2.jpg");
+}
+
+.feedback {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* для экрана меньше 320px */
+
+@media all and (max-width: 320px) {
+    .main-title {
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        padding-top: 30px;
+    }
+    .inner-title {
+        font-size: 25px;
+        line-height: 25px;
+        color: #fff;
+        padding-top: 30px;
+    }
+    .content {
+        padding-top: 10px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+    p {
+        font-size: 10px;
+        padding: 0 10px;
+    }
+    .parallax {
+        height: 300px;
+    }
+}
+
+
+/* для экрана больше 320px и меньше 480px */
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+    .main-title {
+        font-size: 40px;
+        line-height: 30px;
+        color: #fff;
+        padding-top: 30px;
+    }
+    .inner-title {
+        font-size: 35px;
+        line-height: 35px;
+        color: #fff;
+        padding-top: 30px;
+    }
+    .content {
+        padding-top: 10px;
+    }
+    h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+    p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    .parallax {
+        height: 500px;
+    }
+}
+
+
+/* для экрана больше 480px и меньше 768px */
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+    /*  section.module*/
+    h2 {
+        font-size: 32px;
+        margin: 0 10px;
+        padding: 0 10px;
+    }
+    /*  section.module*/
+    p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    /*  section.module.parallax h1*/
+    .main-title {
+        font-size: 100px;
+        line-height: 200px;
+    }
+    .inner-title {
+        font-size: 50px;
+        color: #fff;
+    }
+    .parallax {
+        height: 700px;
+    }
+}
+
+
+/* для экрана больше 960px */
+
+@media all and (min-width: 960px) {
+    /*  section.module.parallax h1*/
+    .main-title {
+        font-size: 160px;
+    }
+    .inner-title {
+        font-size: 100px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    h2,
+    p {
+        padding: 0 10px;
+    }
+}
